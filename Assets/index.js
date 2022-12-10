@@ -65,8 +65,8 @@ function init() {
     inq.prompt(questions)
     .then((data)=> {
         writeToFile("./util/README.md", generateMarkdown(data));
+        console.log(data.license)
     })
-    
 }
 
 

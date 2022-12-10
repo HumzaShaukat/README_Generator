@@ -1,25 +1,33 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let selectedLicense = license.license;
-  if (selectedLicense === "MIT") {
-    licenseBadge = "![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)";
-  } else if (selectedLicense === "GPLv3") {
-    licenseBadge = "![License: GPLv3](https://img.shields.io/badge/License-GPLv3-green.svg)";
-  } else if (selectedLicense === "GPL") {
-    licenseBadge = "![License: GPL](https://img.shields.io/badge/License-GPL-lighgreen.svg";
-  } else if (selectedLicense === "APACHE-2.0") {
-    licenseBadge = "![License: APACHE](https://img.shields.io/badge/License-APACHE-red.svg)";
+  if (license == "MIT") {
+    return "![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)";
+  } else if (license == "GPLv3") {
+    return "![License: GPLv3](https://img.shields.io/badge/License-GPLv3-green.svg)";
+  } else if (license == "GPL") {
+    return  "![License: GPL](https://img.shields.io/badge/License-GPL-lighgreen.svg";
+  } else if (license == "APACHE-2.0") {
+    return  "![License: APACHE](https://img.shields.io/badge/License-APACHE-red.svg)";
   } else {
-    return;
+    return "";
   }
-  return licenseBadge;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+  if (selectedLicense === "MIT") {
+    return `[${renderLicenseBadge}]`
+  } else if (selectedLicense == "GPLv3") {
+    licenseBadge = "![License: GPLv3](https://img.shields.io/badge/License-GPLv3-green.svg)";
+  } else if (selectedLicense == "GPL") {
+    licenseBadge = "![License: GPL](https://img.shields.io/badge/License-GPL-lighgreen.svg";
+  } else if (selectedLicense == "APACHE-2.0") {
+    licenseBadge = "![License: APACHE](https://img.shields.io/badge/License-APACHE-red.svg)";
+  } else {
+    return;
+  }
 }
 
 // TODO: Create a function that returns the license section of README
@@ -28,7 +36,7 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.title}    ${renderLicenseBadge(data.license)}
 
   ## Description
 
@@ -36,12 +44,12 @@ function generateMarkdown(data) {
 
   ## Table of Contents
 
-  [Installation](#installation)
-  [Usage](#usage)
-  [License](#license)
-  [Contributing](#contributing)
-  [Tests](#tests)
-  [Questions](#questions)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
 
   ## Installation
 
