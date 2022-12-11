@@ -28,7 +28,7 @@ const questions = [
     {
         type: "checkbox", 
         name: "license",
-        choices: ["MIT", "GPLv3", "GPL", "APACHE-2.0"],
+        choices: ["MIT", "GPL-3.0", "GPL", "APACHE-2.0"],
         message: "Pick your License."
     },
     {
@@ -65,7 +65,6 @@ function init() {
     inq.prompt(questions)
     .then((data)=> {
         writeToFile("./util/README.md", generateMarkdown(data));
-        console.log(data.license)
     })
 }
 
