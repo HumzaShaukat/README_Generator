@@ -1,29 +1,29 @@
-# Sample Title    ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+# Sample Title    
 
   ## Description
 
-  Here is a short description of my project
+  Here is a short description of my project and what it does
 
   ## Table of Contents
 
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   ## Installation
 
-  Here are the installation instructions
+  Here are the instructions for you to be able to install it
 
   ## Usage
 
-  Here are the usage instructions
+  Here is how you can use it
   
   ## License
     
-  This project is licensed under the MIT license.
+  This project is licensed under the GPL-3.0 license.
     
   ## Contributing
 
@@ -31,9 +31,9 @@
 
   ## Tests
 
-  I dont have any tests to include
+  Here are some tests for debugging
 
   ## Questions
 
-  If you have questions, [here](github.com/humzashaukat) is my GitHub profile or you can email me at humzas@umich.edu.
+  If you have questions, [here](github.com/humza-shaukat) is my GitHub profile or you can email me at humzas@umich.edu.
   
